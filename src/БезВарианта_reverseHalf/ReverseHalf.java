@@ -1,10 +1,13 @@
+package БезВарианта_reverseHalf;
+
 import java.util.ArrayDeque;
+import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
 public class ReverseHalf {
     public static void reverseHalf(Queue<Integer> q) {
-        Stack<Integer> s = new Stack<>();
+        Stack<Integer> s = new Stack<Integer>();
         int size = q.size();
 
         for(int i = 0; i < size; i++) {
@@ -23,17 +26,19 @@ public class ReverseHalf {
             q.add(q.remove());
 
         System.out.println(q);
+
     }
     public static void main(String[] args) {
-        Queue<Integer> q1 = new ArrayDeque<Integer>();
-        q1.add(1);
-        q1.add(8);
-        q1.add(7);
-        q1.add(2);
-        q1.add(9);
-        q1.add(18);
-        q1.add(12);
-        q1.add(0);
-        reverseHalf(q1);
+        Queue<Integer> q = new LinkedList<>();
+        q.add(1);
+        q.add(2);
+        q.add(3);
+        q.add(4);
+        q.add(5);
+        q.add(6);
+        q.add(7);
+        q.add(8);
+        q.add(9);
+        reverseHalf(q);
     }
 }
