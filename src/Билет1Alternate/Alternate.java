@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Alternate {
     public List<Integer> alternate(List<Integer> list1, List<Integer> list2) {
-        Iterator<Integer> i1 = list1.iterator();
+        Iterator<Integer> i1 = list1.iterator();//Паттерн Iterator необходим для перебора элемента коллекции
         Iterator<Integer> i2 = list2.iterator();
         List<Integer> result = new ArrayList<Integer>();
 

@@ -20,6 +20,7 @@ public class ReverseKeysMap {
         map1.put(1,"first");
         map1.put(2, "second");
         map1.put(3, "third");
+        map1.put(6,"third");
         map1.put(4, "fourth");
         map1.put(5, "fifth");
 
