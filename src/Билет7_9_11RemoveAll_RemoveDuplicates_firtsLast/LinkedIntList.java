@@ -31,10 +31,10 @@ public class LinkedIntList<T> {
             curr = curr.next;
         }
     }
-    public void removeAll(LinkedIntList list2) {
+    public void removeAll(LinkedIntList list) {
         ListNode previous = front;
         ListNode current = front;
-        ListNode toRemove = list2.front;
+        ListNode toRemove = list.front;
 
         while (current != null && toRemove != null) {
             if (current.data < toRemove.data) {
